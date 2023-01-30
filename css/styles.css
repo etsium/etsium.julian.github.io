@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(233, 233, 233);
+}
+
+p{
+    margin: 0;
+}
+
+.perfil-nombre{
+    font-size: 1.8rem;
+}
+
+.titulo{
+    font-weight: 700;
+}
+
+.typing::before {
+    content: '';
+    top: 0;
+    right: 0;
+    width: 2px;
+}
+
+.col{
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+.typing h3 {
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    animation: type 30s steps(100);
+}
+
+.Educacion .card{
+    width: 20rem;
+}
+
+.imagen-educacion{
+    min-height: 15rem;
+}
+
+.card{
+    color: rgb(233, 233, 233);
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.tab-content{
+    min-height: 20rem;
+}
+
+.empresaLogo{
+    width: 15rem;
+    height: 15rem;
+}
+
+.fecha{
+    text-align: end;
+}
+
+@media only screen and (min-width: 10px) and (max-width: 991px){
+    
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #sobreMi-texto{
+        font-size: 1.3rem;
+    }
+}

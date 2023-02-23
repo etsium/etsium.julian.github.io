@@ -38,7 +38,7 @@ var experienciaLaboral = [
         tipoContrato: 'Jornada completa',
         descripcion: '-Soporte de TI de hardware<br>-Soporte de TI de software<br>-Informes en la nube (McAfee, Wsus, Snow)<br>-Cumplimiento de incidentes',
         fecha: 'jul. 2021 - actualidad',
-        imageUrl: 'https://media.licdn.com/dms/image/C4E0BAQHgD8IVRy11QA/company-logo_200_200/0/1656655805339?e=1683158400&v=beta&t=TuQ9t-2tCTrn5XbVs-B_xEnnjK6-7uPIwGOWeAq2nKI'
+        imageUrl: './Imagenes/logoSmurfitKappa.png'
     },
     {
         id: 1,
@@ -47,7 +47,7 @@ var experienciaLaboral = [
         tipoContrato: 'Profesional independiente',
         descripcion: '-Soporte técnico pc -Soporte a proveedores<br>-Instalación de aplicaciones en windows (PcPos y Sitel)<br>*PcPos y Sitel: aplicaciones que permiten al usuario informar sus servicios (sector salud).',
         fecha: 'oct. 2018 - ene. 2022',
-        imageUrl: 'https://media.licdn.com/dms/image/C4E0BAQGBvHWSFx1xWg/company-logo_200_200/0/1628777229867?e=1683158400&v=beta&t=7BXQRpeG0jfpXWTCVWV_WGg6iTIfGn4Y3qrEW8rw6L4'
+        imageUrl: './Imagenes/logoITCSoluciones.png'
     },
     {
         id: 2,
@@ -56,7 +56,7 @@ var experienciaLaboral = [
         tipoContrato: 'Jornada parcial',
         descripcion: '-Soporte de TI de hardware<br>-Soporte de TI de software<br>-Soporte de VoIP<br>-Soporte de red<br>-Administración de proveedores',
         fecha: 'abr. 2021 - jun. 2021',
-        imageUrl: 'https://cruzmedical.com.ar/wp-content/uploads/2020/04/cruzmedical-logo.png'
+        imageUrl: './Imagenes/logoCruzMedical.png'
     },
     {
         id: 3,
@@ -65,7 +65,7 @@ var experienciaLaboral = [
         tipoContrato: 'Contrato temporal',
         descripcion: '-C programación profesor (Nivel Secundaria)<br>-Electronica Basica Profesor (Nivel Secundaria)',
         fecha: 'may. 2018 - jun. 2018',
-        imageUrl: 'https://huergo.edu.ar/images/logo85.png'
+        imageUrl: './Imagenes/logoHuergo.png'
     },
     {
         id: 4,
@@ -74,7 +74,7 @@ var experienciaLaboral = [
         tipoContrato: 'Seasonal',
         descripcion: '-Servicio al cliente.<br>-Use una variedad de máquinas como cutter y guillotina',
         fecha: 'dic. 2017 - mar. 2018',
-        imageUrl: 'https://lh3.googleusercontent.com/p/AF1QipPe-dOcsRWR1EDt50wCpRuljvsnwRStXZpe2Mhy=w768-h768-n-o-v1'
+        imageUrl: './Imagenes/logoCromo.png'
     },
     {
         id: 5,
@@ -83,7 +83,7 @@ var experienciaLaboral = [
         tipoContrato: 'Contrato de prácticas',
         descripcion: '-Instalación de sistemas operativos y aplicaciones en PC como Office y Autocad.<br>-Asistente de configuración de red.<br>-Asistente de clases complementarias.<br>-Soporte técnico de PC',
         fecha: 'mar. 2016 - dic. 2016',
-        imageUrl: 'https://huergo.edu.ar/images/logo85.png'
+        imageUrl: './Imagenes/logoHuergo.png'
     }
 ]
 

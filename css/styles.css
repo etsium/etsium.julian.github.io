@@ -1,20 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap');
 
+:root{
+    --start--bar--width: 0%;
+    --end--bar--width: 0%;
+}
+
+html {
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Cormorant Garamond', serif;
     color: rgb(233, 233, 233);
 }
 
-p{
-    margin: 0;
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
-.perfil-nombre{
+p {
+    margin: 0;
+    white-space: normal;
+}
+
+.perfil-nombre {
     font-size: 1.8rem;
 }
 
-.titulo{
+.titulo {
     font-weight: 700;
 }
 
@@ -25,7 +40,7 @@ p{
     width: 2px;
 }
 
-.col{
+.col {
     display: flex;
     padding-bottom: 3rem;
 }
@@ -38,16 +53,17 @@ p{
     animation: type 30s steps(100);
 }
 
-.Educacion .card{
+.Educacion .card {
     width: 20rem;
 }
 
-.imagen-educacion{
+.imagen-educacion {
     min-height: 15rem;
 }
 
-.card{
+.card {
     color: rgb(233, 233, 233);
+    animation: ContentFadeIn 5s;
 }
 
 .contenido {
@@ -57,21 +73,169 @@ p{
     gap: 20rem;
 }
 
-.tab-content{
+.tab-content {
     min-height: 20rem;
 }
 
-.empresaLogo{
+.empresaLogo {
     width: 15rem;
     height: 15rem;
 }
 
-.fecha{
+
+.fecha {
     text-align: end;
 }
 
-@media only screen and (min-width: 10px) and (max-width: 991px){
-    
+.tab-pane.fade.show {
+    animation: TabContentFadeIn 2s forwards;
+}
+
+#certificaciones__contenido{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.certificacion__tarjeta {
+    position: relative;
+    background: #333;
+    display: flex;
+    width: 30rem;
+    border-radius: 6px;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgb(0 0 0 / 20%), 0 0 1rem rgb(0 0 0 / 20%);
+    padding: 2rem;
+    overflow: hidden;
+    gap: 1rem;
+    animation: ContentFadeIn 5s forwards;
+
+}
+
+.certificacion__tarjeta__imagen__logo {
+    width: 3rem;
+}
+
+
+.certificacion__tarjeta__titulo {
+    color: white;
+    margin-top: 0;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.Certificacion__tarjeta__contenedor__info{
+    text-align: center;
+    width: 100%;
+    place-self: center;
+}
+
+.certificacion__tarjeta__svg {
+    position: absolute;
+    left: 0;
+    top: 0rem;
+}
+
+/* Time Line*/
+.timeline{
+    display: flex;
+    justify-content: center;
+}
+
+.timeline__container{
+    width: 100%;
+    padding: 0 10rem 0 10rem;
+}
+
+.timeline__bar{
+    position: relative;
+    top: 1.2rem;
+    width: 100%;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: #2C3E50;
+    z-index: -1;
+   
+}
+
+.timeline__bar__full{
+    top: 0rem;
+    height: .5rem;
+    background-color: #AEB6BF;
+    animation: progressBar 3s forwards;
+}
+
+
+.timeline__input{
+    appearance: none;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #2C3E50;
+    cursor: pointer;
+}
+
+.timeline__input:checked{
+    background-color: #AEB6BF;
+}
+
+.timeline__input__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212529;
+    height: 3rem;
+}
+
+.creditos{
+    margin: 0;
+    font-weight: bold;
+}
+@keyframes TabContentFadeIn {
+    0% {
+        transform: translateX(50rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ContentFadeIn {
+    0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes progressBar {
+    0% {
+        width: var(--start--bar--width);
+    }  
+
+    100% {
+        width: var(--end--bar--width);
+    }
+}
+
+
+@media only screen and (min-width: 10px) and (max-width: 991px) {
+
     .contenido {
         display: flex;
         flex-direction: column;
@@ -80,7 +244,26 @@ p{
         gap: 2rem;
     }
 
-    #sobreMi-texto{
+    #sobreMi-texto {
         font-size: 1.3rem;
+    }
+
+    .timeline__container{
+        padding: 0 1rem 0 1rem;
+    }
+
+    .certificacion__tarjeta {
+        width: 100%;  
+    }
+
+    #certificaciones__contenido {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+
+    #myTab{
+        justify-content: center;
     }
 }
